@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bulletin.ui.BulletinRefreshButton android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/refresh_button_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+    <ImageView android:layout_gravity="center" android:id="@id/refresh_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_refresh_button" android:scaleType="fitXY" />
+    <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/refresh_button_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+</com.baidu.bulletin.ui.BulletinRefreshButton>

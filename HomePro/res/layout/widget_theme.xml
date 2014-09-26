@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.theme.ThemeIcon android:layout_gravity="top" android:id="@id/widget_theme_icon" android:layout_width="72.0dip" android:layout_height="fill_parent" android:layout_marginLeft="-2.0dip" android:layout_marginTop="-10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/widget_theme_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/widget_theme_logo" android:background="@drawable/theme_widget" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="-1.0dip" android:layout_marginTop="-1.0dip" />
+        <TextView android:id="@id/widget_theme_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="@string/desktop_theme" style="@style/WorkspaceIcon" />
+    </LinearLayout>
+</com.baidu.launcher.ui.widget.baidu.theme.ThemeIcon>

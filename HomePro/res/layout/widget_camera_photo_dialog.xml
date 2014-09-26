@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@id/curr_image" android:background="@color/white" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/ic_camera_widget_dialoge_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/ic_camera_widget_dialoge_divider" android:showDividers="middle">
+            <TextView android:id="@id/set_default_photo_wallpaper_button" android:background="@drawable/widget_camera_dialog_item" android:text="@string/text_set_photo_to_camera_widget_wallpaper" style="@style/PhotoDialogItem" />
+            <TextView android:id="@id/goto_gallery_to_edit" android:background="@drawable/widget_camera_dialog_item" android:text="@string/text_goto_gallery_to_edit" style="@style/PhotoDialogItem" />
+            <TextView android:id="@id/delete_photo" android:background="@drawable/widget_camera_dialog_item" android:text="@string/text_delete_photo" style="@style/PhotoDialogItem" />
+            <TextView android:id="@id/share_photo" android:background="@drawable/widget_camera_dialog_item_circle" android:text="@string/text_share_photo" style="@style/PhotoDialogItem" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

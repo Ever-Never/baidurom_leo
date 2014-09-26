@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.policy.NumBatteryView android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/battery_num_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    <LinearLayout android:layout_gravity="center" android:id="@id/battery_num" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/num1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/num" />
+        <ImageView android:id="@id/num2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/num" />
+        <ImageView android:id="@id/num3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/num" />
+    </LinearLayout>
+</com.android.systemui.statusbar.policy.NumBatteryView>

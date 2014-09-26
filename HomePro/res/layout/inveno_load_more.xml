@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/load_more_text" android:layout_width="wrap_content" android:layout_height="@dimen/load_more_height" android:text="@string/bulletin_footer_pull_label" />
+</FrameLayout>

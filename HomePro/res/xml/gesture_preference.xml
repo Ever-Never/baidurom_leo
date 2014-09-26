@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/preference_gesture_up_title" android:key="gesture_up" android:summary="@string/preference_gesture_up_summary" />
+    <CheckBoxPreference android:title="@string/preference_gesture_down_title" android:key="gesture_down" android:summary="@string/preference_gesture_down_summary" />
+    <Preference android:layout="@layout/yi_preference_baidu" android:title="@string/preference_gesture_doubleclick_title" android:key="gesture_doubleclick" />
+</PreferenceScreen>

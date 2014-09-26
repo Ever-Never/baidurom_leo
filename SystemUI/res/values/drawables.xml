@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="notification_number_text_color">#ffeeeeee</item>
+    <item type="drawable" name="notification_item_background_color">#ff111111</item>
+    <item type="drawable" name="notification_item_background_color_pressed">#ff257390</item>
+    <item type="drawable" name="status_bar_background">#ff000000</item>
+    <item type="drawable" name="status_bar_recents_app_thumbnail_background">#88000000</item>
+    <item type="drawable" name="recents_callout_line">#99ffffff</item>
+    <item type="drawable" name="notification_item_background_legacy_color">#ffaaaaaa</item>
+    <item type="drawable" name="intruder_bg_pressed">#ff33b5e5</item>
+    <item type="drawable" name="system_bar_background">#ff000000</item>
+    <item type="drawable" name="notification_popup_item_pressed">#662b7cef</item>
+    <item type="drawable" name="switch_holder_background">#fff5f7fa</item>
+    <item type="drawable" name="switch_item_divider_color">#ffced3da</item>
+</resources>

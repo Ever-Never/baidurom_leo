@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bulletin.ui.BulletinLayout android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hapticFeedbackEnabled="false" launcher:cellWidth="40.0dip" launcher:cellHeight="55.0dip" launcher:longAxisStartPadding="0.0dip" launcher:longAxisEndPadding="0.0dip" launcher:shortAxisStartPadding="0.0dip" launcher:shortAxisEndPadding="0.0dip" launcher:shortAxisCells="1" launcher:longAxisCells="1"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2" />

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_gravity="top" android:orientation="horizontal" android:background="@drawable/ic_camera_widget_time_bg" android:paddingLeft="9.0dip" android:layout_width="fill_parent" android:layout_height="52.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_widget_time" />
+        <TextView android:layout_gravity="center" android:id="@id/year" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" style="@style/TimeTextStyle_small" />
+        <TextView android:layout_gravity="center" android:id="@id/month_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" style="@style/TimeTextStyle_big" />
+        <TextView android:layout_gravity="center" android:id="@id/hour_min" android:paddingLeft="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TimeTextStyle_small" />
+    </LinearLayout>
+</FrameLayout>

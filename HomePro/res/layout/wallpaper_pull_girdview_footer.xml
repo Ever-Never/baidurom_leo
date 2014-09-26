@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/pull_girdview_footer_content" android:background="@color/wallpaper_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/pull_girdview_footer_progressbar" android:visibility="invisible" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" style="@style/yi_progress_medium_baidu_light" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/wallpaper_foot_loadmore_text" android:id="@id/pull_girdview_footer_hint_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/pull_grid_waitting_label" />
+</LinearLayout>

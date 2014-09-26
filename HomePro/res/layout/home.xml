@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.homeview.HomeView android:id="@id/home" android:background="@drawable/trans" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <com.baidu.launcher.ui.homeview.Workspace android:id="@id/workspace" android:paddingTop="0.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.launcher.ui.homeview.Indicator android:layout_gravity="bottom|center" android:id="@id/home_indicator" android:layout_width="fill_parent" android:layout_height="22.0dip" android:layout_marginBottom="@dimen/indicator_margin_bottom" launcher:indicatorWidth="@dimen/indicator_width" launcher:indicatorHeight="@dimen/indicator_height" launcher:indicatorGap="@dimen/indicator_gap" />
+    <com.baidu.launcher.ui.homeview.DockBar android:layout_gravity="bottom" android:id="@id/dockbar" android:background="@drawable/dock_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dock_bottom_margin" />
+</com.baidu.launcher.ui.homeview.HomeView>

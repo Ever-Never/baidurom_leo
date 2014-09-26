@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/loadingLayout" android:background="@color/wallpaper_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/wallpaper_error" android:background="@color/wallpaper_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/wallpaper_error_reload" android:background="@drawable/wallpaper_refresh_btn_selector" android:layout_width="136.0dip" android:layout_height="36.0dip" android:text="@string/webview_click_to_reload" style="@style/webview_reload_btn_text_style" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/wallpaper_item_load_text" android:gravity="center_horizontal" android:id="@id/wallpaper_error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/webview_loadfailed_message" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/wallpaper_loading" android:background="@color/wallpaper_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="54.0dip" android:layout_height="54.0dip" style="@style/yi_progress_large_baidu_light" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/wallpaper_title_bar_text" android:id="@id/wallpaper_loading_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/preview_loading" style="@style/webview_errormessage_text_style" />
+    </LinearLayout>
+</RelativeLayout>

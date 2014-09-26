@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0dip" android:textColor="@color/weather_city_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/location" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight" android:maxLines="1" android:shadowColor="@color/transparent" android:shadowDy="1.0" android:shadowRadius="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

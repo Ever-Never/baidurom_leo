@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bulletin.ui.pagecomponent.BulletinHistoryTodayCell android:background="@color/bulletin_cell_color_3"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="22.0sp" android:id="@id/todayTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_today_front_left" android:layout_marginTop="10.0dip" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/dividerImageView" android:background="@drawable/divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/divider" android:layout_below="@id/todayTextView" />
+        <TextView android:textSize="12.0sp" android:id="@id/historyTodayTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_today_front_left" android:layout_marginTop="10.0dip" android:layout_below="@id/dividerImageView" android:layout_alignParentLeft="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/historyTodayTextView" android:layout_alignParentLeft="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:id="@id/topYearTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_today_front_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/topLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/topYearTextView" android:layout_centerHorizontal="false" android:layout_centerVertical="true">
+                    <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_history_today_index_birth" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/imageView2" android:background="@drawable/bulletin_history_today_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bulletin_appwidget_mask_down" android:layout_below="@id/imageView1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:id="@id/topDescTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/topLayout" android:layout_centerHorizontal="false" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:id="@id/midYearTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_today_front_left" android:layout_centerHorizontal="false" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/midLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/midYearTextView" android:layout_centerVertical="false">
+                    <ImageView android:id="@id/imageView4" android:background="@drawable/bulletin_history_today_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bulletin_appwidget_mask_down" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/imageView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_history_today_index_birth" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:id="@id/midDescTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/midLayout" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="20.0dip">
+                <TextView android:textSize="12.0sp" android:id="@id/bottomYearTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/history_today_front_left" android:layout_centerVertical="true" />
+                <RelativeLayout android:id="@id/bottomLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/bottomYearTextView">
+                    <ImageView android:id="@id/imageView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_history_today_index_birth" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/imageView6" android:background="@drawable/bulletin_history_today_line" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_appwidget_mask_down" android:layout_above="@id/imageView5" android:layout_centerHorizontal="true" android:layout_centerVertical="false" />
+                </RelativeLayout>
+                <TextView android:textSize="14.0sp" android:ellipsize="end" android:id="@id/bottomDescTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" android:layout_toRightOf="@id/bottomLayout" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</com.baidu.bulletin.ui.pagecomponent.BulletinHistoryTodayCell>

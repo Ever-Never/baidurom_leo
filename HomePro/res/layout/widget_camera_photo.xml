@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.camera.PhotoView android:padding="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <ImageView android:id="@id/item_photo_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" />
+    <com.baidu.launcher.ui.widget.baidu.camera.TimeView android:id="@id/time_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:rootview="@layout/widget_camera_time_bottom" />
+    <com.baidu.launcher.ui.widget.baidu.camera.TimeView android:id="@id/time_top" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:rootview="@layout/widget_camera_time_top" />
+    <com.baidu.launcher.ui.widget.baidu.camera.TimeView android:id="@id/time_left" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:rootview="@layout/widget_camera_time_left" />
+    <com.baidu.launcher.ui.widget.baidu.camera.TimeView android:id="@id/time_right" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:rootview="@layout/widget_camera_time_right" />
+</com.baidu.launcher.ui.widget.baidu.camera.PhotoView>

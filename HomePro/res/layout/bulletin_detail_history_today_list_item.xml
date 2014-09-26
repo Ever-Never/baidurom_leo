@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/history_todaty_item_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:textColor="#ff303030" android:gravity="right" android:id="@id/yearTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:width="40.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <FrameLayout android:id="@id/eventLayout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:minHeight="@dimen/history_todaty_item_min_height" android:layout_toRightOf="@id/yearTextView" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center" android:id="@id/lineImageView" android:background="@drawable/bulletin_history_today_line" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/bulletin_history_today_line" android:minHeight="@dimen/history_todaty_item_min_height" />
+        <ImageView android:layout_gravity="center" android:id="@id/typeImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_history_today_birth" />
+    </FrameLayout>
+    <TextView android:textSize="14.0dip" android:textColor="#ff647390" android:linksClickable="true" android:id="@id/historyDescTextView" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/eventLayout" android:layout_centerVertical="true" />
+</RelativeLayout>

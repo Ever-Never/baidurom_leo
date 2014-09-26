@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/item_app_icon" android:layout_width="@dimen/item_app_icon_width" android:layout_height="@dimen/item_app_icon_height" android:layout_marginTop="@dimen/item_app_icon_top_margin" android:src="@drawable/ic_launcher" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@string/image_des" />
+    <TextView android:textSize="@dimen/pop_content_footer_tips_textsize" android:textColor="@color/widget_onekey_app_item_text_color" android:ellipsize="end" android:id="@id/item_app_name" android:paddingLeft="@dimen/item_app_name_top_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_below="@id/item_app_icon" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/item_app_operate" android:focusable="true" android:clickable="true" android:layout_width="22.0dip" android:layout_height="22.0dip" android:layout_marginLeft="@dimen/item_app_operate_left_margin" android:layout_marginTop="@dimen/item_app_operate_top_margin" android:src="@drawable/item_app_close" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@string/image_des" />
+</RelativeLayout>

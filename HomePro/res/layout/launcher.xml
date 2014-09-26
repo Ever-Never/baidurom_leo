@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.dragdrop.DragLayer android:id="@id/drag_layer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <include layout="@layout/edit_view" />
+    <include layout="@layout/home" />
+    <include layout="@layout/all_apps_list" />
+    <com.baidu.launcher.ui.folder.FolderLayer android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/folder_layer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/folder_layer_content" />
+    </com.baidu.launcher.ui.folder.FolderLayer>
+    <com.baidu.launcher.ui.widget.baidu.weather.ui.SetLocationLayer android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/widget_setlocationlayer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/transparent_widget_weather_city_list" />
+    </com.baidu.launcher.ui.widget.baidu.weather.ui.SetLocationLayer>
+    <com.baidu.launcher.ui.widget.baidu.switchtool.SwitchExtLayer android:orientation="vertical" android:id="@id/switchExt_layer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayer android:gravity="center" android:id="@id/qucik_launcher_layer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayoutContainer android:layout_gravity="center" android:id="@id/quick_laucnher_container" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="@dimen/quick_launcher_layout_size" android:layout_height="@dimen/quick_launcher_layout_size">
+            <com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayout android:id="@id/quick_laucnher_expend_layout_1" android:background="#00000000" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayout android:id="@id/quick_laucnher_expend_layout_2" android:background="#00000000" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayout android:id="@id/quick_laucnher_expend_layout_3" android:background="#00000000" android:focusable="false" android:focusableInTouchMode="false" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.baidu.launcher.ui.widget.baidu.quicklauncher.CenterTabs android:layout_gravity="center" android:id="@id/center_tab" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="@dimen/quick_launcher_center_tab" android:layout_height="@dimen/quick_launcher_center_tab" />
+            <View android:layout_gravity="center" android:background="@drawable/quick_launcher_tab_bg" android:focusable="true" android:focusableInTouchMode="true" android:visibility="visible" android:layout_width="@dimen/quick_launcher_center_tab" android:layout_height="@dimen/quick_launcher_center_tab" />
+        </com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayoutContainer>
+    </com.baidu.launcher.ui.widget.baidu.quicklauncher.QuickLauncherLayer>
+    <com.baidu.launcher.ui.preview.Preview android:id="@id/preview" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:previewLayoutPaddingTop="20.0dip" launcher:previewLayoutPaddingBottom="20.0dip" launcher:previewLayoutPaddingHorizontal="8.0dip" launcher:previewLayoutWidthGap="5.0dip" launcher:previewLayoutHeightGap="5.0dip" />
+    <com.baidu.launcher.ui.dragdrop.DeleteZone android:gravity="center" android:layout_gravity="top" android:id="@id/delete_zone" android:background="@drawable/trashcan_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="47.0dip" launcher:direction="horizontal">
+        <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/delete_zone_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/delete_zone_home" android:drawableLeft="@drawable/trashcan" android:drawablePadding="5.0dip" />
+    </com.baidu.launcher.ui.dragdrop.DeleteZone>
+</com.baidu.launcher.ui.dragdrop.DragLayer>

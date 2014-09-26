@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.common.SelectedTextView android:textSize="12.0dip" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="top|center" android:background="@drawable/trans" android:paddingTop="5.0dip" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/apps_customize_cell_height" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.launcher" />

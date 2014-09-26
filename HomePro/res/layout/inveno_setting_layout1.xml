@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_setting1" android:layout_width="fill_parent" android:layout_height="63.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_white" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_white" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/white" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_list" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/list" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_VersionUp" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_version" android:background="@drawable/inveno_version_up" android:focusableInTouchMode="true" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/version_up" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

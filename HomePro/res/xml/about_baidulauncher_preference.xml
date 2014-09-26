@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:enabled="true" android:layout="@layout/yi_preference_baidu" android:title="@string/preference_copyright_title" android:key="copyright" android:summary="@string/preference_copyright_summary" />
+    <Preference android:enabled="true" android:layout="@layout/yi_preference_baidu" android:title="@string/preference_user_agreement" android:key="user_agreement" />
+</PreferenceScreen>

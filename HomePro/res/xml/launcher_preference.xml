@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/menu_appearance_settings" android:key="launcher_category">
+        <Preference android:icon="@drawable/ic_list_arrowpoint" android:layout="@layout/yi_preference_baidu" android:title="@string/scroll_effect" android:key="scroll_type" />
+        <CheckBoxPreference android:title="@string/preference_set_loop_title" android:key="loop" android:summary="@string/preference_set_loop_summary" />
+        <CheckBoxPreference android:title="@string/preference_slide_wallpaper_title" android:key="slide_wallpaper" android:summary="@string/preference_slide_wallpaper_summary" />
+        <CheckBoxPreference android:title="@string/preference_show_icon_floor_title" android:key="show_icon_floor" android:summary="@string/preference_show_icon_floor_summary" />
+        <CheckBoxPreference android:title="@string/preference_show_dockbar_bg_title" android:key="show_dockbar_bg" android:summary="@string/preference_show_dockbar_bg_summary" android:defaultValue="true" />
+        <Preference android:layout="@layout/yi_preference_baidu" android:title="@string/icon_scale" android:key="scale_icon" />
+        <Preference android:icon="@drawable/ic_list_arrowpoint" android:layout="@layout/yi_preference_baidu" android:title="@string/applist_appearance_settings" android:key="applist_appearance_set" />
+        <CheckBoxPreference android:title="@string/preference_show_dockbar_applist_icon_title" android:key="show_dockbar_applist_icon" android:summary="@string/preference_show_dockbar_applist_icon_summary" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_advances_settings" android:key="advanced_settings">
+        <CheckBoxPreference android:title="@string/pref_title_system_persistent" android:key="system_persistent" android:summary="@string/pref_summary_system_persistent" />
+        <Preference android:icon="@drawable/ic_list_arrowpoint" android:layout="@layout/yi_preference_baidu" android:title="@string/preference_gesture" android:key="set_gesture" />
+        <CheckBoxPreference android:title="@string/preference_bulletin_switch" android:key="bulletin_switch" android:summary="@string/preference_bulletin_summary" />
+        <Preference android:layout="@layout/yi_preference_baidu" android:title="@string/preference_update_title" android:key="update" android:summary="@string/preference_update_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

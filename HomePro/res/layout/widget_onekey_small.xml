@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.onekeywidget.OneKeyWidgetSmall android:layout_gravity="top" android:orientation="vertical" android:id="@id/container" android:layout_width="72.0dip" android:layout_height="fill_parent" android:layout_marginTop="-4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/onekey_widget_small_bg" android:layout_width="67.0dip" android:layout_height="67.0dip">
+        <com.baidu.launcher.ui.widget.baidu.onekeywidget.CircleProgressBar android:id="@id/progressBar" android:background="@drawable/onekey_widget_small_circle_progress_bar_fg" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_centerInParent="true" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="13.0dip" android:textColor="@color/widget_onekey_small_text_color" android:id="@id/progressText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_percent" android:shadowColor="@color/widget_onekey_small_shadow_color" android:shadowRadius="2.0" />
+            <TextView android:textSize="11.0dip" android:textColor="@color/widget_onekey_small_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/percent" android:shadowColor="@color/widget_onekey_small_shadow_color" android:shadowRadius="2.0" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip" android:layout_marginRight="4.0dip" android:text="@string/onekeyBtn" style="@style/WorkspaceIcon" />
+</com.baidu.launcher.ui.widget.baidu.onekeywidget.OneKeyWidgetSmall>

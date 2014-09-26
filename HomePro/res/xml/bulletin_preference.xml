@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/preference_bulletin_switch" android:key="bulletin_switch" android:summary="@string/preference_bulletin_summary" />
+    <CheckBoxPreference android:title="@string/settings_config_autodownload" android:key="bulletin_autosync_switch" android:dependency="bulletin_switch" />
+    <CheckBoxPreference android:title="@string/settings_monitor_on_off" android:key="bulletin_prompt_switch" android:dependency="bulletin_autosync_switch" />
+</PreferenceScreen>

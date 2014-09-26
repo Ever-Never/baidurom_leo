@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.NotificationPanelView android:id="@id/notification_panel" android:background="@drawable/notification_panel_bg" android:paddingTop="@dimen/notification_panel_padding_top" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/notification_panel_margin_left"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.holiday.GifView android:layout_gravity="bottom" android:id="@id/holiday_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/carrier_label_bottom" />
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network" android:gravity="center" android:layout_gravity="bottom" android:id="@id/carrier_label" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="@dimen/carrier_label_height" android:layout_marginBottom="@dimen/carrier_label_bottom" />
+    <TextView android:textSize="11.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|right|center" android:id="@id/newhand_tip_new" android:background="@drawable/switch_tip_new_bg" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/switch_view_height" />
+    <LinearLayout android:orientation="vertical" android:id="@id/expanded_body" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/close_handle_underlap">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" layout="@layout/status_bar_expanded_header" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/view_page_margin_top" android:layout_weight="1.0">
+            <ViewStub android:id="@id/flip_settings_stub" android:visibility="invisible" android:layout="@layout/flip_settings" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.android.systemui.statusbar.phone.MyViewPager android:id="@id/sb_view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/indicator_layout" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="@dimen/close_handle_height">
+        <View android:id="@id/indicator_background" android:background="@color/status_bar_line_indicator_bg" android:layout_width="wrap_content" android:layout_height="4.0dip" />
+        <View android:id="@id/indicator" android:background="@color/status_bar_line_indicator" android:layout_width="wrap_content" android:layout_height="4.0dip" />
+    </FrameLayout>
+    <com.android.systemui.statusbar.phone.CloseDragHandle android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/close" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height">
+        <ImageView android:layout_gravity="bottom" android:id="@id/close_handler" android:background="@drawable/status_bar_close_on_default" android:layout_width="fill_parent" android:layout_height="@dimen/close_handle_height" />
+    </com.android.systemui.statusbar.phone.CloseDragHandle>
+</com.android.systemui.statusbar.phone.NotificationPanelView>

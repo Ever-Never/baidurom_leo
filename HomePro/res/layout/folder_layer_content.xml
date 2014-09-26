@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/folder_layer_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.launcher.ui.folder.FolderContainer android:orientation="vertical" android:id="@id/folder_layout" android:background="@null" android:layout_width="fill_parent" android:layout_height="@dimen/folder_layout_height" android:layout_marginLeft="15.0dip" android:layout_marginTop="@dimen/foldercontainer_margintop" android:layout_marginRight="15.0dip" />
+    <FrameLayout android:id="@id/anim_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

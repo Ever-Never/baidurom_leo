@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/detail_list_item_selector" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/appImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/yingyong2" android:minWidth="48.0dip" android:minHeight="48.0dip" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="66.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:id="@id/appNameTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/allDownloadTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/appNameTextView" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/sizeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:layout_toRightOf="@id/allDownloadTextView" android:layout_below="@id/appNameTextView" />
+        <TextView android:textSize="12.0sp" android:textColor="#ffaaaaaa" android:id="@id/installedTexTView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_toRightOf="@id/sizeTextView" android:layout_alignTop="@id/sizeTextView" />
+        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@id/star0ImagView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_1" />
+            <ImageView android:id="@id/star1ImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_1" android:layout_toRightOf="@id/star0ImagView" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/star2ImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_1" android:layout_toRightOf="@id/star1ImageView" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/star3ImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_1" android:layout_toRightOf="@id/star2ImageView" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/star4ImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/star_1" android:layout_toRightOf="@id/star3ImageView" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

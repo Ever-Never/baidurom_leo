@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.inveno.newpiflow.widget.TouchView android:orientation="vertical" android:background="?img_appendbg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/img_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/inveno_pi_img_list_layout" />
+    <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/img_layout" layout="@layout/inveno_pi_text_list_layout" />
+</com.inveno.newpiflow.widget.TouchView>

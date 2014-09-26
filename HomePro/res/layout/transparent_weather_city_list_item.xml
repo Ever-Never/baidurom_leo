@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@color/weather_city_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/location" android:layout_width="69.0dip" android:layout_height="40.0dip" android:minHeight="?android:listPreferredItemHeight" android:maxLines="1" android:shadowColor="@color/transparent" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/divider" android:background="@drawable/weatherwidget_line" android:layout_width="1.0dip" android:layout_height="16.0dip" android:layout_marginLeft="0.0dip" />
+</LinearLayout>

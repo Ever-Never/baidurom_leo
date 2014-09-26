@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/theme_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_disable" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="18.0dip" android:textColor="@color/theme_local_list_text_color_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/textview_sdcard_eject" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_error" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:layout_gravity="center_horizontal" android:id="@id/webview_error_reload" android:background="@drawable/wallpaper_refresh_btn_selector" android:layout_width="136.0dip" android:layout_height="36.0dip" android:text="@string/webview_click_to_reload" style="@style/webview_reload_btn_text_style" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/wallpaper_item_load_text" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/webview_error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/webview_loadfailed_message" style="@style/webview_errormessage_text_style" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view_Loading" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ProgressBar android:layout_gravity="center" android:layout_width="76.0dip" android:layout_height="76.0dip" style="@style/yi_progress_large_baidu_light" />
+    </LinearLayout>
+    <GridView android:gravity="center" android:id="@id/gridview" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@null" android:horizontalSpacing="4.0dip" android:verticalSpacing="8.0dip" android:numColumns="3" />
+</LinearLayout>

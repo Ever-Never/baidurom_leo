@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.common.BubbleTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="top|center" android:background="@drawable/trans" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingRight="3.0dip" android:paddingBottom="0.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/apps_customize_cell_height" android:singleLine="true" android:shadowColor="#a0000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:drawablePadding="0.0dip" launcher:action="status"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2" />

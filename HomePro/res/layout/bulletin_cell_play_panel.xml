@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top|right|center" android:background="@drawable/bulletin_channel_baidu_music" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/loading" android:background="@drawable/bulletin_music_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/play" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/downloaded" android:background="@drawable/bulletin_music_downloaded" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="bottom|right|center" android:id="@id/upload" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_music_upload" />
+</FrameLayout>

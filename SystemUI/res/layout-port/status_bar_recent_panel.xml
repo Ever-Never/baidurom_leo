@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.RecentsPanelView android:id="@id/recents_root" android:layout_width="fill_parent" android:layout_height="fill_parent" systemui:recentItemLayout="@layout/status_bar_recent_item"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <View android:id="@id/recents_transition_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center" android:id="@id/recents_bg_protect" android:background="@drawable/recent_blur_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="bottom" android:id="@id/half_bg" android:background="@drawable/recent_half_bg" android:layout_width="fill_parent" android:layout_height="@dimen/recent_half_bg_height" />
+        <TextView android:layout_gravity="right|center" android:id="@id/lock_app_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="36.0dip" android:layout_marginBottom="100.0dip" />
+        <ImageView android:id="@id/recents_transition_placeholder_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <com.android.systemui.recent.RecentsHorizontalScrollView android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/recents_container" android:scrollbars="none" android:fadingEdge="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:stackFromBottom="true" android:divider="@null">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/recents_linear_layout" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </com.android.systemui.recent.RecentsHorizontalScrollView>
+    </FrameLayout>
+    <include android:id="@id/recents_no_apps" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/status_bar_no_recent_apps" />
+    <include android:id="@id/clear_recent_bar" layout="@layout/clear_recent_bar" />
+    <RelativeLayout android:layout_gravity="bottom|left|center" android:id="@id/firsttime_guide" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/recent_half_bg_height">
+        <ImageView android:id="@id/recent_guide_del" android:background="@drawable/recent_app_guide_del" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/recent_guide_lock" android:background="@drawable/recent_app_guide_lock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/status_bar_recents_app_icon_max_width" android:layout_below="@id/recent_guide_del" />
+    </RelativeLayout>
+</com.android.systemui.recent.RecentsPanelView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/fl_setting" android:background="?setting_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_blueline" android:background="?tools_blue_line" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="1.0dip" />
+    <include android:id="@id/setting2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inveno_setting_layout1" />
+    <include android:id="@id/setting1" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/inveno_setting_layout" />
+</FrameLayout>

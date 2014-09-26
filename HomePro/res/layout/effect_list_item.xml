@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/effect_list_item" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:verticalSpacing="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/effect_list_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/effect_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/notification_item_song_artist_text_color" android:gravity="center" android:layout_gravity="bottom" android:id="@id/effect_thumbnail_title" android:layout_width="fill_parent" android:layout_height="34.0dip" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/effect_thumbnail_mark" android:layout_width="@dimen/thumbnail_mark_width_size" android:layout_height="@dimen/thumbnail_mark_height_size" android:src="@drawable/bg_use" android:visible="true" />
+    </FrameLayout>
+    <Button android:textSize="12.0dip" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_apply" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="33.0dip" android:minHeight="33.0dip" android:text="@string/apply" />
+</LinearLayout>

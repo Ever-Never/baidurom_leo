@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.editview.PagedViewWidget android:background="@drawable/focusable_view_bg" android:paddingLeft="@dimen/widget_padding" android:paddingRight="@dimen/widget_padding" android:focusable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.launcher">
+    <FrameLayout android:id="@id/widget_preview_container" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="10.0dip">
+        <com.baidu.launcher.ui.editview.PagedViewWidgetImageView android:layout_gravity="center" android:id="@id/widget_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerInside" />
+    </FrameLayout>
+    <com.baidu.launcher.ui.editview.WidgetCellView android:layout_gravity="center_vertical" android:id="@id/widget_cell" android:layout_width="@dimen/edit_view_widgetcellview_width" android:layout_height="@dimen/edit_view_widgetcellview_width" android:layout_marginLeft="54.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginTop="67.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/widget_title_color" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/widget_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.baidu.launcher.ui.editview.PagedViewWidget>

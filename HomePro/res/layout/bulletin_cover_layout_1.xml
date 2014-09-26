@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.333" layout="@layout/bulletin_cell_cover_big" />
+    <include android:id="@id/cell_00" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.666" layout="@layout/bulletin_cell_fog_big" />
+</LinearLayout>

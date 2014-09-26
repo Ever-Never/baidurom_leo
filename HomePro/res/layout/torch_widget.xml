@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.torch.TorchView android:layout_gravity="top" android:orientation="vertical" android:layout_width="72.0dip" android:layout_height="fill_parent" android:layout_marginTop="-4.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView android:layout_gravity="bottom|center" android:id="@id/sfv" android:background="#00ffffff" android:layout_width="0.100000024sp" android:layout_height="0.100000024sp" android:layout_marginBottom="13.0dip" />
+    <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/widget_torch_icon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginLeft="2.0dip" />
+        <TextView android:id="@id/widget_torch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="@string/widget_torch_title" android:layout_below="@id/widget_torch_icon" android:layout_centerHorizontal="true" style="@style/WorkspaceIcon" />
+    </RelativeLayout>
+</com.baidu.launcher.ui.widget.baidu.torch.TorchView>

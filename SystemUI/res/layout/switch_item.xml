@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.switcher.SwitcherItemView android:gravity="center" android:orientation="horizontal" android:background="@drawable/status_bar_icon_selector_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="center" android:minWidth="48.0dip" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/switch_text_color" android:ellipsize="end" android:gravity="center" android:id="@id/text" android:visibility="gone" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="48.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@id/line_width" android:background="@color/switch_line_color" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <View android:layout_gravity="right" android:id="@id/line_height" android:background="@color/switch_line_color" android:visibility="visible" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="16.0sp" android:textColor="#ff4f555a" android:ellipsize="end" android:id="@id/tip" android:visibility="gone" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+</com.android.systemui.statusbar.switcher.SwitcherItemView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.camera.CameraWidget android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <FrameLayout android:id="@id/top_view" android:background="@drawable/ic_camera_widget_camera_aperture_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@id/preview_parent" android:background="@drawable/ic_camera_widget_camera_aperture_pic" android:layout_width="@dimen/camera_widget_preview_width" android:layout_height="@dimen/camera_widget_preview_height" android:layout_marginLeft="@dimen/preview_parent_margin_left" android:layout_marginTop="@dimen/preview_parent_margin_top" android:layout_marginRight="@dimen/preview_parent_margin_right" android:layout_marginBottom="@dimen/preview_parent_margin_bottem">
+            <ImageView android:layout_gravity="center" android:id="@id/open_camera" android:background="@drawable/camera_widget_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextureView android:id="@id/camera_preview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="11.0dip">
+                <ImageView android:id="@id/stop_camera" android:background="@drawable/widget_camera_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_camera_widget_off" />
+                <ImageView android:id="@id/switch_camera" android:background="@drawable/widget_camera_btn_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:src="@drawable/ic_camera_widget_switch_photo" />
+            </LinearLayout>
+            <com.baidu.launcher.ui.widget.baidu.camera.TimeView android:id="@id/time_view" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:rootview="@layout/widget_camera_time_bottom" />
+            <ImageView android:layout_gravity="center" android:id="@id/auto_focus_flag" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="center" />
+            <TextView android:textColor="#ffe3e4e6" android:gravity="center" android:layout_gravity="center" android:id="@id/preview_toast" android:background="@drawable/ic_camera_widget_toast" android:paddingLeft="17.0dip" android:paddingRight="17.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_takepicture_toast" android:alpha="0.0" />
+        </FrameLayout>
+    </FrameLayout>
+    <FrameLayout android:id="@id/scroll_container" android:background="@drawable/ic_camera_widget_picture_bg" android:layout_width="334.0dip" android:layout_height="306.0dip" android:layout_below="@id/top_view" android:layout_centerHorizontal="true">
+        <ScrollView android:layout_gravity="center" android:id="@id/bump_scrollview" android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="21.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.baidu.launcher.ui.widget.baidu.camera.BumpListView android:layout_gravity="top" android:orientation="vertical" android:id="@id/bump_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <include layout="@layout/widget_camera_empty" />
+                <include layout="@layout/widget_btn_goto_gallery" />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/is_working_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/ic_camera_widget_lamp_normal" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/temp_image_parent_margintop">
+        <ImageView android:layout_gravity="top|center" android:id="@id/temp_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:translationY="@dimen/temp_image_margintop" />
+    </FrameLayout>
+</com.baidu.launcher.ui.widget.baidu.camera.CameraWidget>

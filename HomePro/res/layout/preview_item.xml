@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.preview.PreviewItem android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/preview_image" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/preview_bottom" android:background="@drawable/home_preview_bottom_background" android:paddingTop="3.0dip" android:paddingBottom="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/home_preview_icon_normal_screen" android:scaleType="center" />
+</com.baidu.launcher.ui.preview.PreviewItem>

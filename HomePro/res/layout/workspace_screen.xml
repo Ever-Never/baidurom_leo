@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.homeview.CellLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:hapticFeedbackEnabled="false" android:layerType="hardware" launcher:cellWidth="@dimen/workspace_cell_width" launcher:cellHeight="@dimen/workspace_cell_height" launcher:longAxisStartPadding="@dimen/cell_longAxisStartPadding" launcher:longAxisEndPadding="@dimen/cell_longAxisEndPadding" launcher:shortAxisStartPadding="@dimen/cell_shortAxisStartPadding" launcher:shortAxisEndPadding="@dimen/cell_shortAxisEndPadding" launcher:shortAxisCells="@integer/workspace_cellCountX" launcher:longAxisCells="@integer/workspace_cellCountY"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2" />

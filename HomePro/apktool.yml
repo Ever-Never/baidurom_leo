@@ -1,0 +1,13 @@
+version: 1.5.2
+apkFileName: HomePro.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '9'
+  targetSdkVersion: '10'
+packageInfo:
+  cur_package: com.baidu.home2
+  orig_package: com.baidu.home2
+compressionType: false

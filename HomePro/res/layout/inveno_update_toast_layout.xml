@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/background_black" android:paddingLeft="30.0dip" android:paddingTop="10.0dip" android:paddingRight="30.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@id/toast_tv" android:paddingLeft="13.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/MUSIC" android:layout_toRightOf="@id/pb_versionUp" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/pb_versionUp" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateDrawable="@drawable/inveno_progress_medium_holo" android:layout_alignBottom="@id/toast_tv" android:animationResolution="33" />
+</RelativeLayout>

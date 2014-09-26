@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/pop_content_header" android:layout_width="fill_parent" android:layout_height="@dimen/pop_content_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0dip" android:id="@id/pop_tips_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/pop_tips_left_margin" android:layout_marginTop="@dimen/pop_tips_top_margin" android:text="@string/pop_tips_normal_mode" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/pop_mode_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pop_mode_top_margin" android:layout_marginRight="@dimen/pop_mode_right_margin" android:src="@drawable/pop_mode_lock" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/image_des" />
+</RelativeLayout>

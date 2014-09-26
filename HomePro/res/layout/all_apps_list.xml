@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.applistview.AppListView android:id="@id/all_apps_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <ImageView android:layout_gravity="bottom" android:id="@id/applist_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.baidu.launcher.ui.applistview.AppsCustomizePagedView android:id="@id/apps_customize_pane_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/apps_list_pageLayoutPaddingBottom" launcher:pageLayoutWidthGap="@dimen/apps_list_pageLayoutWidthGap" launcher:pageLayoutHeightGap="@dimen/apps_list_pageLayoutHeightGap" launcher:pageLayoutPaddingTop="@dimen/apps_list_pageLayoutPaddingTop" launcher:pageLayoutPaddingLeft="@dimen/apps_list_pageLayoutPaddingLeft" launcher:pageLayoutPaddingRight="@dimen/apps_list_pageLayoutPaddingRight" launcher:maxAppCellCountX="@integer/apps_customize_maxCellCountX" launcher:maxAppCellCountY="@integer/apps_customize_maxCellCountY" launcher:widgetCellWidthGap="5.0dip" launcher:widgetCellHeightGap="5.0dip" launcher:widgetCountX="2" launcher:widgetCountY="3" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/hideapp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/launcher_edit_top_height" android:layout_marginBottom="12.0dip">
+        <Button android:textColor="@drawable/text_selector" android:id="@id/hideapp_cancel_btn" android:background="@drawable/trans" android:text="@string/cancel_action" style="@style/HideAppButton" />
+        <Button android:textColor="@drawable/text_selector" android:id="@id/hideapp_true_btn" android:background="@drawable/trans" android:text="@string/rename_action" style="@style/HideAppButton" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/disableapp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/launcher_edit_top_height" android:layout_marginBottom="12.0dip">
+        <Button android:textColor="@drawable/text_selector" android:id="@id/disableapp_cancel_btn" android:background="@drawable/trans" android:text="@string/cancel_action" style="@style/HideAppButton" />
+        <Button android:textColor="@drawable/text_selector" android:id="@id/disableapp_true_btn" android:background="@drawable/trans" android:text="@string/rename_action" style="@style/HideAppButton" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="top" android:orientation="horizontal" android:id="@id/customapp" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/launcher_edit_top_height">
+        <TextView android:textSize="13.0sp" android:textColor="@*android:color/white" android:ellipsize="end" android:gravity="center" android:id="@id/custom_app_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_custom_sort_hint" android:singleLine="true" />
+    </LinearLayout>
+    <com.baidu.launcher.ui.applistview.AllAppsIndicatorNew android:layout_gravity="bottom|center" android:id="@id/paged_view_indicator" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="@dimen/app_list_indicator_margin_bottom" launcher:indicatorWidth="@dimen/indicator_width" launcher:indicatorHeight="@dimen/indicator_height" launcher:indicatorGap="@dimen/indicator_gap" />
+</com.baidu.launcher.ui.applistview.AppListView>

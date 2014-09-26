@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.editview.EditView android:id="@id/edit_view" android:background="#a0000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <com.baidu.launcher.ui.editview.EditAppsListView android:id="@id/view_add_list_pane" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:pageLayoutWidthGap="@dimen/apps_customize_pageLayoutWidthGap" launcher:pageLayoutHeightGap="@dimen/apps_customize_pageLayoutHeightGap" launcher:pageLayoutPaddingTop="@dimen/apps_customize_pageLayoutPaddingTop" launcher:pageLayoutPaddingBottom="@dimen/apps_customize_addViewPaddingBottom" launcher:pageLayoutPaddingLeft="@dimen/apps_customize_pageLayoutPaddingLeft" launcher:pageLayoutPaddingRight="@dimen/apps_customize_pageLayoutPaddingRight" launcher:maxAppCellCountX="@integer/apps_customize_maxCellCountX" launcher:maxAppCellCountY="2" launcher:widgetCellWidthGap="5.0dip" launcher:widgetCellHeightGap="5.0dip" launcher:widgetCountX="2" launcher:widgetCountY="1" />
+    <LinearLayout android:layout_gravity="top" android:id="@id/launcher_edit_top_pane" android:background="@drawable/launcher_edit_add_bottom_background" android:layout_width="fill_parent" android:layout_height="@dimen/launcher_edit_top_height" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/launcher_edit_tab_app" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_applications" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/launcher_edit_tab_widget" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_widgets" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/launcher_edit_tab_shortcut" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_shortcuts" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="14.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/launcher_edit_tab_folder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/group_folders" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.baidu.launcher.ui.homeview.Indicator android:layout_gravity="bottom|center" android:id="@id/launcher_edit_indicator" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginBottom="@dimen/launcher_edit_indicator_height" launcher:indicatorWidth="@dimen/indicator_width" launcher:indicatorHeight="@dimen/indicator_height" launcher:indicatorGap="@dimen/indicator_gap" />
+    <com.baidu.launcher.ui.editview.ScreenSnapshot android:layout_gravity="bottom" android:id="@id/view_edit_snapshot" android:background="#90000000" android:layout_width="fill_parent" android:layout_height="@dimen/thoumbnail_height">
+        <ImageView android:gravity="center" android:id="@id/thumbnail_previous" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+        <com.baidu.launcher.ui.editview.ThumbnailGroup android:id="@id/thumbnail_group" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:layout_marginBottom="45.0dip" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center">
+                <ImageView android:id="@id/image_screen" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+                <ImageView android:id="@id/image_set_home" android:background="@drawable/edit_home_button" android:layout_width="wrap_content" android:layout_height="@dimen/edit_view_image_set_home" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/image_delete_screen" android:background="@drawable/editing_delete_screen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </com.baidu.launcher.ui.editview.ThumbnailGroup>
+        <ImageView android:gravity="center" android:id="@id/thumbnail_next" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" />
+    </com.baidu.launcher.ui.editview.ScreenSnapshot>
+    <com.baidu.launcher.ui.editview.EditViewIndicator android:layout_gravity="bottom|center" android:id="@id/edit_view_indicator" android:layout_width="fill_parent" android:layout_height="20.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="@dimen/edit_view_indicator_marginbottom" launcher:indicatorWidth="@dimen/indicator_width" launcher:indicatorHeight="@dimen/indicator_height" launcher:indicatorGap="@dimen/indicator_gap" />
+</com.baidu.launcher.ui.editview.EditView>

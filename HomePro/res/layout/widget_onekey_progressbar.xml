@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/widget_onekey_load_text_color" android:id="@id/tipsTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:text="@string/tipsTV" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/progressLayout" android:background="@drawable/progress_bk" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="5.0dip" android:layout_below="@id/tipsTV" android:layout_alignParentLeft="true">
+        <RelativeLayout android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <ImageView android:id="@id/memoryBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:src="@drawable/progress_1" android:scaleType="fitXY" android:layout_below="@id/tipsTV" android:layout_alignParentLeft="true" android:contentDescription="@string/image_des" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/useTV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tips_50M" android:singleLine="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:id="@id/remainTV" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tips_100M" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

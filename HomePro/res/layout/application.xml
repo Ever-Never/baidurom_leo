@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.common.BubbleTextView android:focusable="true" launcher:action="status" style="@style/WorkspaceIcon.Portrait"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2" />

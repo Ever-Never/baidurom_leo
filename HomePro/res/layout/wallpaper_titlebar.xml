@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/title_bar" android:background="@drawable/wallpaper_title_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titleBarLogo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:gravity="center_vertical" android:id="@id/titleBarIcon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ic_launcher_online_wallpaper" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/wallpaper_title_bar_text" android:gravity="center_vertical" android:id="@id/titleBarAppText" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="6.0dip" android:text="@string/online_wallpaper" android:layout_toRightOf="@id/titleBarIcon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/titleBarContent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/backView" android:background="@drawable/wallpaper_back_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/titleBarBack" android:layout_width="12.0dip" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:src="@drawable/wallpaper_titlebar_back_btn_nomal" android:scaleType="center" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/titleBarContentIcon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="3.0dip" android:src="@drawable/ic_launcher_online_wallpaper" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/wallpaper_title_bar_text" android:gravity="center_vertical" android:id="@id/titleBarContentText" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="50.0dip" android:text="@string/online_wallpaper" android:layout_centerVertical="true" />
+        <View android:layout_width="5.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/titleBarContentText" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:id="@id/titleBarDel" android:background="@drawable/wallpaper_back_bg" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_theme_delete" />
+    </LinearLayout>
+    <Button android:textSize="16.0dip" android:textColor="@color/wallpaper_title_bar_text" android:gravity="center" android:id="@id/titleBarMore" android:background="@drawable/wallpaper_title_button" android:visibility="gone" android:layout_width="85.0dip" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:text="@string/more_wallpaper" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

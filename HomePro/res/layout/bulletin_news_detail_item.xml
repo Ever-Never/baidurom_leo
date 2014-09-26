@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/newsDetail" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff303030" android:layout_gravity="center_horizontal" android:id="@id/titleTextView" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" />
+                <TextView android:id="@id/titleBaseLine" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" />
+                <LinearLayout android:orientation="vertical" android:id="@id/newsContent" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" />
+                <TextView android:textSize="16.0sp" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="right" android:id="@id/moreContentTextView" android:background="@drawable/bulletin_opitem_backgrond" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/more_content_text" />
+                <RelativeLayout android:id="@id/opView" android:background="@drawable/bulletin_op_background" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip">
+                    <TextView android:textSize="20.0sp" android:textColor="#ffffffff" android:ellipsize="end" android:id="@id/opTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:scrollHorizontally="true" android:layout_centerInParent="true" />
+                    <ImageView android:id="@id/opButton" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="8.0dip" android:src="@drawable/op_download" android:layout_toLeftOf="@id/opTextView" android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <com.baidu.yi.ads.AdView android:id="@id/adview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/failedView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:layout_marginBottom="26.0dip" android:src="@drawable/bg_nocontent" />
+                <TextView android:layout_gravity="center_horizontal" android:id="@id/error_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" />
+                <Button android:layout_gravity="center_horizontal" android:id="@id/error_but" android:layout_width="150.0dip" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

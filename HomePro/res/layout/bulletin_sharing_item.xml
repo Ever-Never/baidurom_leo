@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sharing_apk_icon" android:background="@drawable/bulletin_gridview_item_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <TextView android:id="@id/sharing_apk_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/sharing_apk_icon" android:layout_centerHorizontal="true" />
+</RelativeLayout>

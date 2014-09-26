@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="3100" android:versionName="3.1.0" android:installLocation="internalOnly" package="com.baidu.home2"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <original-package android:name="com.baidu.launcher" />
+    <permission android:label="@string/permlab_install_shortcut" android:name="com.android.launcher.permission.INSTALL_SHORTCUT" android:protectionLevel="normal" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:description="@string/permdesc_install_shortcut" />
+    <permission android:label="@string/permlab_uninstall_shortcut" android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" android:protectionLevel="normal" android:permissionGroup="android.permission-group.SYSTEM_TOOLS" android:description="@string/permdesc_uninstall_shortcut" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.SET_ORIENTATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <user-permission android:name="android.permission.DELETE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="yi.permission.USE_UBC" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="baidu.permission.USE_UBC" />
+    <uses-permission android:name="yi.permission.USE_UBC" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.BIND_DEVICE_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="com.baidu.permission.PACKAGES_DISABLE" />
+    <application android:label="@string/application_name" android:icon="@drawable/ic_launcher_home" android:name="com.baidu.launcher.app.LauncherApplication" android:backupAgent="com.baidu.launcher.utils.BackupAgent" android:hardwareAccelerated="true" android:largeHeap="true">
+        <activity android:theme="@style/Theme" android:name="com.baidu.launcher.app.Launcher" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="mcc|mnc|orientation|fontScale" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar.Fullscreen" android:name="com.baidu.launcher.ui.folder.FillFolder" android:screenOrientation="unspecified" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:name="com.baidu.launcher.ui.effect.EffectDetailActivity" />
+        <activity android:label="@string/effect_slide" android:name="com.baidu.launcher.ui.effect.EffectListActivity" android:taskAffinity="com.baidu.launcher.preference" android:launchMode="singleTop" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:label="@string/menu_launcher_settings" android:name="com.baidu.launcher.app.LauncherPreference" android:taskAffinity="com.baidu.launcher.preference" android:excludeFromRecents="true" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:label="@string/preference_gesture" android:name="com.baidu.launcher.app.GesturePreference" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:label="@string/preference_gesture" android:name="com.baidu.launcher.app.BulletinPreference" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.baidu.launcher.app.SelectAppDialog" android:screenOrientation="unspecified" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name="com.baidu.launcher.feedback.UserFeedBackFragmentActivity" android:taskAffinity="com.baidu.launcher.preference" android:launchMode="singleTask" android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+        <service android:name="com.baidu.launcher.service.BusinessSyncIntentService" />
+        <service android:name="com.baidu.launcher.service.AlwaysRunningService" />
+        <service android:name="com.baidu.yi.ads.service.AdService" android:process="com.baidu.yi.ads.service">
+            <intent-filter>
+                <action android:name="com.baidu.yi.ads.service.IAdService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/Theme.OneKeyDialog" android:name="com.baidu.launcher.ui.widget.baidu.onekeywidget.PopupActivity" android:launchMode="singleInstance" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.DownloadAlert" android:label="@string/download" android:name="com.baidu.launcher.ui.common.DownloadAlert" android:launchMode="singleTop" android:screenOrientation="unspecified" />
+        <activity android:theme="@style/Theme.BulletinGuider" android:name="com.baidu.launcher.app.BulletinGuiderActivity" android:launchMode="singleTop" android:screenOrientation="unspecified" />
+        <receiver android:name="com.baidu.launcher.app.LockScreenReceiver" android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data android:name="android.app.device_admin" android:resource="@xml/lock_screen" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.baidu.launcher.ui.widget.baidu.onekeywidget.OptimizationUpdateService">
+            <intent-filter>
+                <action android:name="com.baidu.launcher.onekeywidget.optimization_update_service" />
+            </intent-filter>
+        </service>
+        <service android:name="com.baidu.launcher.ui.widget.baidu.weather.service.impl.UpdateService">
+            <intent-filter>
+                <action android:name="update_current" />
+                <action android:name="update_city" />
+                <action android:name="update_pm" />
+            </intent-filter>
+        </service>
+        <provider android:name="com.baidu.launcher.ui.widget.baidu.weather.provider.ForecastProvider" android:authorities="com.baidu.home2.ui.widget.baidu.weather" />
+        <activity android:theme="@style/Theme.SetLocationDialog" android:name="com.baidu.launcher.ui.widget.baidu.weather.ui.SetLocationActivity" android:launchMode="singleInstance" android:screenOrientation="unspecified" />
+        <meta-data android:name="BaiduMobAd_STAT_ID" android:value="ae321c18d8" />
+        <meta-data android:name="BaiduMobAd_EXCEPTION_LOG" android:value="true" />
+        <meta-data android:name="BaiduMobAd_SEND_STRATEGY" android:value="ONCE_A_DAY" />
+        <meta-data android:name="BaiduMobAd_ONLY_WIFI" android:value="false" />
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote" />
+        <receiver android:name="com.baidu.launcher.receiver.InstallShortcutReceiver" android:permission="com.android.launcher.permission.INSTALL_SHORTCUT">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.INSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.launcher.receiver.UninstallShortcutReceiver" android:permission="com.android.launcher.permission.UNINSTALL_SHORTCUT">
+            <intent-filter>
+                <action android:name="com.android.launcher.action.UNINSTALL_SHORTCUT" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.launcher.receiver.EventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.baidu.launcher.business.sync" />
+                <action android:name="com.baidu.launcher.first.start" />
+                <action android:name="com.baidu.launcher.alarm.strategy" />
+                <action android:name="com.baidu.launcher.alarm.business" />
+                <action android:name="com.baidu.launcher.download_start" />
+                <action android:name="com.baidu.launcher.download_progress" />
+                <action android:name="com.baidu.launcher.download_completed" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.baidu.launcher.db.LauncherProvider" android:authorities="com.baidu.home2" />
+        <activity android:theme="@style/ThemeDetailActivity" android:label="@string/theme_title" android:icon="@drawable/ic_launcher_theme" android:name="com.baidu.launcher.thememanager.ui.BaiduThemeActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/ThemeDetailActivity" android:name="com.baidu.launcher.thememanager.ui.ThemeDetailActivity" android:exported="true" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/ThemeDetailActivity" android:name="com.baidu.launcher.thememanager.ui.ThemeDetailFullScreen" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/ThemeDetailActivity" android:name="com.baidu.launcher.thememanager.ui.ThemeDetailOnlineActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/ThemeDetailActivity" android:name="com.baidu.launcher.thememanager.ui.ThemeDetailFullScreenOnline" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/Theme.DownloadAlert" android:label="@string/download_theme" android:name="com.baidu.launcher.thememanager.ui.DownloadAlert" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:launchMode="singleTop" android:screenOrientation="portrait" />
+        <activity android:theme="@style/ThemeDetailActivity" android:name="com.baidu.launcher.thememanager.ui.OpenThemeActivity" android:exported="true" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.theme" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:label="BootReceiver" android:name="com.baidu.launcher.thememanager.service.ThemeReceiver" android:enabled="true" android:process="com.baidu.launcher.theme">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <data android:scheme="file" />
+            </intent-filter>
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.baidu.launcher.thememanager.service.ThemeProvider" android:exported="true" android:process="com.baidu.launcher.theme" android:authorities="com.baidu.home2.thememanager" />
+        <service android:name="com.baidu.launcher.thememanager.service.FetchThemeDataService" android:process="com.baidu.launcher.theme" />
+        <service android:name="com.baidu.bulletin.BulletinService" />
+        <receiver android:name="com.baidu.bulletin.SyncScheduler$NetworkMonitor">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.STATE_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.bulletin.utils.MusicPlayer$StateBarMonitor">
+            <intent-filter>
+                <action android:name="com.baidu.bulletin.utils.musicplayer.musicstatebar" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.baidu.bulletin.utils.MediaMonitor">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+                <action android:name="android.intent.action.MEDIA_SHARED" />
+                <action android:name="android.intent.action.MEDIA_EJECT" />
+                <action android:name="android.intent.action.MEDIA_REMOVED" />
+                <action android:name="android.intent.action.MEDIA_BAD_REMOVAL" />
+                <data android:scheme="file" />
+            </intent-filter>
+        </receiver>
+        <provider android:name="com.baidu.yi.sdk.cloudstorage.provider.CloudStorageProvider" android:authorities="com.baidu.home2.cloudstorage.provider" />
+        <service android:name="com.baidu.yi.sdk.cloudstorage.CloudStorageService">
+            <intent-filter>
+                <action android:name="com.baidu.yi.sdk.cloudstorage.CloudStorageService" />
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/app_init_bg" android:label="@string/online_wallpaper" android:icon="@drawable/ic_launcher_online_wallpaper" android:name="com.baidu.launcher.thememanager.ui.BaiduWallpaperActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.wallpaper" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_WALLPAPER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.LauncherPreference" android:name="com.baidu.launcher.thememanager.ui.WallpaperListOnlineActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.wallpaper" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:name="com.baidu.launcher.thememanager.ui.WallpaperDetailOnlineActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.wallpaper" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:name="com.baidu.launcher.thememanager.ui.WallpaperDetailLocalActivity" android:process="com.baidu.launcher.theme" android:taskAffinity="com.baidu.launcher.wallpaper" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/Theme.LauncherPreference" android:name="com.baidu.launcher.app.UserAgreement" android:launchMode="standard" android:screenOrientation="portrait" />
+        <activity android:theme="@style/ApplistBackgroundSelect" android:label="@string/applist_setting" android:name="com.baidu.launcher.ui.applistview.setAppearance.SetApplistBgActivity" />
+        <activity android:name="com.baidu.launcher.ui.applistview.setAppearance.CropImage" android:screenOrientation="portrait" />
+        <receiver android:label="@string/search_widget_name" android:icon="@drawable/baidusearch_widget" android:name="com.baidu.launcher.searchbar.BaiduSearchWidgetProvider" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.package_not_found" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.voice_search_not_found" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.searchbox_unavailable" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.voice_search_unavailable" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.widget_update" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.camera_search_unavailable" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.camera_search_not_found" />
+                <action android:name="com.baidu.BaiduSearchWidgetProider.camera_search_first_launch" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/search_widget_info" />
+        </receiver>
+        <receiver android:name="com.inveno.newpiflow.biz.BizReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.action.FORWARD_MSG" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.inveno.newpiflow.biz.SaveDataService" />
+        <receiver android:name="com.inveno.newpiflow.biz.IqiyiDownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.inveno.newpiflow.biz.IqiyiInstallService" />
+    </application>
+</manifest>

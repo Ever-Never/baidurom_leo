@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="130.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_category_cover" android:background="@drawable/wallpaper_default_preview" android:layout_width="fill_parent" android:layout_height="130.0dip" android:scaleType="fitXY" />
+    <ProgressBar android:id="@id/progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/wallpaper_item_load_text" android:id="@id/tv_loading_ticker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/preview_loading" android:layout_centerInParent="true" />
+    <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_category_name" android:background="@color/half_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

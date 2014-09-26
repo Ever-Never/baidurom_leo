@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/statusbar_root" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/statusbar_download_icon" android:background="@drawable/notify_panel_notification_icon_background" android:layout_width="@dimen/statusbar_download_icon_width" android:layout_height="fill_parent" android:src="@drawable/yi_ic_element_download_normal_light" android:scaleType="center" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/notification_download_text_color_1" android:id="@id/statusbar_download_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/notification_download_text_color_1" android:id="@id/statusbar_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <ProgressBar android:layout_gravity="center_vertical" android:id="@id/statusbar_progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:max="100" style="@style/my_ProgressBar_Horizontal_dark" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/notification_download_text_color_1" android:layout_gravity="right" android:id="@id/statusbar_download_progress" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="10.0dip" />
+    </LinearLayout>
+</LinearLayout>

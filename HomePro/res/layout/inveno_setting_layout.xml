@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_setting" android:layout_width="fill_parent" android:layout_height="63.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_channelSet" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_channel" android:background="@drawable/inveno_channel_set" android:focusableInTouchMode="true" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_channel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/channel" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_mode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_mode" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mode" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_myCollection" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_mycollection" android:background="@drawable/inveno_mycollection" android:focusableInTouchMode="true" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+            <TextView android:textSize="12.0dip" android:textColor="?setting_text_color" android:id="@id/tv_mycollection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mycollection" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

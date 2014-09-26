@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_recents_app_label_color">#ffffffff</color>
+    <color name="status_bar_expanded_header_clock_text_color">#ff4f555a</color>
+    <color name="status_bar_expanded_header_date_text_color">#ff4f555a</color>
+    <color name="switch_text_color">#ff80878d</color>
+    <color name="switch_line_color">#ffced3da</color>
+    <color name="status_bar_clock_color">#ffffffff</color>
+    <color name="traffic_text_color">#ff949494</color>
+    <color name="traffic_config_text_color">#ff949494</color>
+    <color name="traffic_progress_text_color">#ff4f555a</color>
+    <color name="traffic_month_text_color">#ff4f555a</color>
+    <color name="traffic_day_text_color">#ff4f555a</color>
+    <color name="traffic_less_text_color">#fffe8a00</color>
+    <color name="traffic_over_text_color">#ffff2323</color>
+    <color name="traffic_title_color">#ffffffff</color>
+    <color name="switch_item_normal_color">#fff5f7fa</color>
+    <color name="traffic_speed_color">#ffffffff</color>
+    <color name="status_bar_blue_color">#ff2576d1</color>
+    <color name="status_bar_green_color">#ff298827</color>
+    <color name="notification_item_primary_text_color">#ff4f555a</color>
+    <color name="notification_item_secondary_text_color">#ff80878d</color>
+    <color name="notification_item_time_text_color">#ff80878d</color>
+    <color name="switch_item_text_color_pressed">#ffffffff</color>
+    <color name="switch_item_text_color_normal">#ff4f555a</color>
+    <color name="notification_panel_scrim_color">#b0000000</color>
+    <color name="status_bar_line_indicator_bg">#ffffffff</color>
+    <color name="status_bar_line_indicator">#ff29affe</color>
+    <color name="switch_item_swap_color">#ffcccccc</color>
+    <color name="virtual_key_guide_background">#90000000</color>
+</resources>

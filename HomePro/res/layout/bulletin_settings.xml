@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bulletin.ui.settings.Settings android:background="#ffeeeeee" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2">
+    <RelativeLayout android:id="@id/settingsHeader" android:background="#ffeeeeee" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip">
+        <ImageView android:id="@id/settingsIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bulletin_settings_back_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff7d7d7d" android:id="@id/detailType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26.0dip" android:text="@string/menu_channel_order" android:layout_toRightOf="@id/settingsIcon" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/line" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="8.0dip" android:src="#ffffffff" android:layout_below="@id/settingsHeader" />
+    <com.baidu.bulletin.ui.settings.ChannelList android:gravity="center_horizontal" android:id="@id/channelContainer" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_below="@id/line">
+        <ListView android:id="@id/settingListView" android:background="#ffeeeeee" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/divider" android:layout_centerHorizontal="true" />
+    </com.baidu.bulletin.ui.settings.ChannelList>
+</com.baidu.bulletin.ui.settings.Settings>

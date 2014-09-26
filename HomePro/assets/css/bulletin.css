@@ -1,0 +1,113 @@
+/**
+ * @author zhaojie02
+ */
+ 
+html, body, div, h1, p, img, span {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	color: #000000;
+	background-color: #ffffff;
+	height: 100%;
+	word-wrap: break-word;
+}
+
+#wrapper{
+	padding: 0px 14px 0px;
+}
+
+#header{
+	padding: 0;
+}
+
+#title{
+	padding: 14px 16px 14px 16px;
+}
+
+#title_h1{
+	position: relative;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: center;
+	color: #323232;
+	font-weight: 400;
+}
+
+#content{
+	margin-top: 0px;
+	width: 100%;
+}
+
+#details p{
+	line-height: 21px;
+	font-size: 12pt;
+	text-indent: 2em;
+	text-align: left;
+}
+
+#details p + p{	 
+	margin-top:14px;
+}
+
+#details .imgBox + p{	
+	margin-top: 14px;
+}
+
+#details p + .imgBox{	
+	margin-top: 14px;
+}
+
+#details p:first-child{		
+	margin-top: 0;
+}
+
+#details p:last-child{	
+	margin-bottom: 0;
+}
+
+.imgBox{	
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	/*background: url('../image/text_page_pic.png') no-repeat center center;
+	background-size: 50px 50px;*/
+}
+
+.imgBox img{
+	display: inline;
+	border: none;
+	max-width: 100%;
+}
+
+#errorImg {
+	width: 63%;
+}
+
+.imgBox + .imgBox{
+	margin-top: 14px;
+}
+
+.imgBox:first-child{	
+	margin-top: 0;
+}
+
+.imgBox:last-child{	
+	margin-bottom: 0;
+}
+
+
+#error {
+	position: absolute;
+	height: 80%;
+	width: 100%;
+	text-align: center;
+}
+
+#error tbody tr td {
+	vertical-align: middle;
+	color: #b6b6b6;
+	font-size: 12pt;
+}

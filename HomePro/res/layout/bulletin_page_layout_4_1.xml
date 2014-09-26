@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/cell_gap_2_3" android:layout_weight="0.333">
+        <include android:id="@id/cell_00" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/cell_gap_1_2" android:layout_weight="0.5" layout="@layout/bulletin_cell_fog_small_bottom" />
+        <include android:id="@id/cell_01" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/cell_gap_1_2" android:layout_weight="0.5" layout="@layout/bulletin_cell_gradient_small_top" />
+    </LinearLayout>
+    <include android:id="@id/cell_02" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/cell_gap_1_3" android:layout_marginBottom="@dimen/cell_gap_1_3" android:layout_weight="0.333" layout="@layout/bulletin_cell_color_big_top" />
+    <include android:id="@id/cell_03" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/cell_gap_2_3" android:layout_weight="0.333" layout="@layout/bulletin_cell_gradient_big_left" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/yi_ic_element_tab_bar_backgroud" android:maxLevel="0" />
+    <item android:drawable="@drawable/yi_ic_element_tab_bar_highlighted_left" android:maxLevel="1" />
+    <item android:drawable="@drawable/yi_ic_element_tab_bar_highlighted_right" android:maxLevel="2" />
+    <item android:drawable="@drawable/yi_ic_element_tab_bar_highlighted_middle" android:maxLevel="3" />
+    <item android:drawable="@*android:color/transparent" android:maxLevel="4" />
+</level-list>

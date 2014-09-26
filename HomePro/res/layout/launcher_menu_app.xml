@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/launcher_menu_bg" android:layout_width="fill_parent" android:layout_height="@dimen/menu_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/frame_time_sort" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/time_sort_selected" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sort_menu_selected" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_time_sort" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_sort_time" android:drawableTop="@drawable/ic_menu_order_time" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frame_letter_sort" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/letter_sort_selected" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sort_menu_selected" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_letter_sort" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_sort_alphabet" android:drawableTop="@drawable/ic_menu_order_letter" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frame_frequency_sort" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/frequency_sort_selected" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sort_menu_selected" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_frequency_sort" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_frequency_sort" android:drawableTop="@drawable/ic_menu_order_frequency" android:drawablePadding="10.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/frame_custom_sort" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="top|right|center" android:id="@id/custom_sort_selected" android:paddingTop="12.0dip" android:paddingRight="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sort_menu_selected" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_custom_sort" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_custom_sort" android:drawableTop="@drawable/ic_menu_order_custom" android:drawablePadding="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frame_menu_app" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_app" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_disable_apps" android:drawableTop="@drawable/ic_menu_app" android:drawablePadding="2.0dip" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/frame_hide_app" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="12.0sp" android:textColor="@color/menu_text_color" android:gravity="center" android:id="@id/menu_hide_app" android:background="@drawable/menu_item_bg" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_hide_app" android:drawableTop="@drawable/ic_menu_hide_app" android:drawablePadding="2.0dip" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

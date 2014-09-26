@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.TrafficView android:gravity="center" android:orientation="vertical" android:id="@id/traffic_holder" android:background="@drawable/notification_background" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/traffic_view_height" android:layout_marginLeft="@dimen/page_item_margin_left" android:layout_marginRight="@dimen/page_item_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/traffic_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:layout_marginRight="9.0dip" android:layout_weight="1.0">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true">
+            <TextView android:textSize="@dimen/traffic_month_text_size" android:textColor="@color/traffic_text_color" android:ellipsize="end" android:id="@id/traffic_config_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/traffic_month_text_size" android:textColor="@color/traffic_text_color" android:ellipsize="end" android:id="@id/traffic_sim_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/traffic_day_text_size" android:textColor="@color/traffic_day_text_color" android:ellipsize="end" android:id="@id/traffic_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/traffic_month_text_size" android:textColor="@color/traffic_month_text_color" android:ellipsize="end" android:id="@id/traffic_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="90.0dip" android:singleLine="true" android:layout_alignParentRight="true" />
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/traffic_progress_text_size" android:textColor="@color/traffic_progress_text_color" android:ellipsize="end" android:id="@id/traffic_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/traffic_progress_text_size" android:textColor="@color/traffic_progress_text_color" android:ellipsize="end" android:id="@id/traffic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </FrameLayout>
+    </RelativeLayout>
+    <ProgressBar android:id="@id/traffic_progress" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="7.0dip" android:layout_marginTop="1.0dip" android:max="100" android:progress="0" android:progressDrawable="@drawable/traffic_progress" android:layout_weight="1.0" android:layout_below="@id/traffic_info" style="?android:attr/progressBarStyleHorizontal" />
+</com.android.systemui.statusbar.phone.TrafficView>

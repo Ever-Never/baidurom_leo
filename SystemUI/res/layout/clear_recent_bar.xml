@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.recent.ClearView android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="@dimen/recent_clear_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="right" android:id="@id/center_clear_view" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="30.0dip" android:layout_marginBottom="0.0dip">
+        <com.android.systemui.recent.ProgressCircle android:layout_gravity="center" android:id="@id/progressCircle" android:background="@drawable/progress_circle_bg" android:layout_width="120.0dip" android:layout_height="120.0dip" android:progressDrawable="@drawable/progress_circle_change_70" />
+        <ImageButton android:layout_gravity="center" android:id="@id/clear_all" android:background="@drawable/clear_btn" android:layout_width="125.0dip" android:layout_height="124.5dip" android:layout_marginTop="0.20000005dip" />
+        <TextView android:textSize="30.0dip" android:layout_gravity="center" android:id="@id/memory_usage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <TextView android:textSize="12.0sp" android:layout_gravity="bottom|left|center" android:id="@id/rencent_open_app_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="100.0dip" android:text="@string/recent_running_num" />
+    <TextView android:textSize="30.0dip" android:layout_gravity="bottom|left|center" android:id="@id/rencent_open_app" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="90.0dip" android:layout_marginBottom="90.0dip" />
+    <TextView android:textSize="12.0sp" android:layout_gravity="bottom|left|center" android:id="@id/rencent_running_status_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="60.0dip" android:text="@string/recent_memory_status" />
+    <TextView android:textSize="20.0dip" android:layout_gravity="bottom|left|center" android:id="@id/rencent_running_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="30.0dip" />
+</com.android.systemui.recent.ClearView>

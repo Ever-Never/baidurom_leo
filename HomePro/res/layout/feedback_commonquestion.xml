@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/actionBar" android:background="@drawable/yi_ab_solid_light_baidu" android:layout_width="fill_parent" android:layout_height="50.0dip" android:divider="@drawable/actionbar_line" android:showDividers="middle" android:dividerPadding="11.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="@color/rice_button_red_normal" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/feedback" android:background="@drawable/tab_select" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/user_feedback_title" android:singleLine="true" android:layout_weight="1.0" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/rice_button_red_normal" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/commonquestion" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/common_question_title" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/actionBar" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.switchtool.SwitchCell android:id="@id/switch_body" android:background="@drawable/appwidget_button_left" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/switch_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/switch_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/switch_icon" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/switch_title_color" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/switch_title" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:singleLine="true" android:layout_below="@id/switch_indicator" android:layout_centerHorizontal="true" />
+</com.baidu.launcher.ui.widget.baidu.switchtool.SwitchCell>

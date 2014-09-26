@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.systemui.statusbar.switcher.ui.PanelContainer android:orientation="vertical" android:background="@drawable/notification_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/page_item_margin_left" android:layout_marginRight="@dimen/page_item_margin_right" android:layout_marginBottom="@dimen/page_item_margin_bottom">
+        <com.android.systemui.statusbar.switcher.QuickSwitchPanel android:id="@id/quickSwitchPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.android.systemui.statusbar.policy.ToggleSlider android:id="@id/brightSeekBar" android:layout_width="fill_parent" android:layout_height="@dimen/notification_panel_header_height" />
+    </com.android.systemui.statusbar.switcher.ui.PanelContainer>
+    <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/newhand_tip_drag" android:background="@drawable/switch_tip_drag_bg" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/quick_switch_drag_tip_underlap" />
+</FrameLayout>

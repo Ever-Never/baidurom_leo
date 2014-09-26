@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/down_layout" android:background="@drawable/dialog_full_holo_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:background="@drawable/ab_transparent_light_holo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/down_dialog_text_color_1" android:id="@id/down_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/download" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:layout_marginBottom="14.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/down_dialog_text_color_2" android:id="@id/down_progress_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/down_dialog_text_color_2" android:ellipsize="end" android:id="@id/down_name_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/down_progress_txt" android:layout_alignParentLeft="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/down_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="16.0dip" android:max="100" style="@style/my_ProgressBar_Horizontal_light" />
+    <ImageView android:id="@id/img_divider_horizontal" android:background="@drawable/list_divider_holo_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_gravity="fill_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/down_cancel_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel_download" android:layout_weight="1.0" style="@style/my_Widget_Holo_Button" />
+        <ImageView android:id="@id/img_divider_vertical" android:background="@drawable/list_divider_holo_light" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:id="@id/down_hide_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hide" android:layout_weight="1.0" style="@style/my_Widget_Holo_Button" />
+    </LinearLayout>
+</LinearLayout>

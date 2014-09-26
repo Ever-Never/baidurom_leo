@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/theme_item" android:background="@color/theme_background" android:descendantFocusability="afterDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/theme_item_image" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/theme_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitXY" />
+        <TextView android:textColor="@color/white" android:layout_gravity="top|right|center" android:id="@id/theme_text_size" android:layout_width="wrap_content" android:layout_height="23.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center" android:layout_gravity="bottom" android:id="@id/theme_thumbnail_title" android:background="@color/theme_gray" android:layout_width="fill_parent" android:layout_height="23.0dip" android:singleLine="true" />
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/theme_thumbnail_mark" android:layout_width="@dimen/thumbnail_mark_width_size" android:layout_height="@dimen/thumbnail_mark_height_size" android:visible="true" />
+    </FrameLayout>
+    <Button android:textSize="@dimen/theme_button_text_size" android:gravity="center" android:layout_gravity="bottom" android:id="@id/btn_download" android:background="@drawable/btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/button_apply_height" android:minHeight="@dimen/button_apply_height" android:singleLine="true" />
+</FrameLayout>

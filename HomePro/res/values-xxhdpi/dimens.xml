@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="temp_photo_real_width">299.0dip</dimen>
+    <dimen name="camera_widget_preview_width">306.0dip</dimen>
+    <dimen name="camera_widget_preview_height">192.0dip</dimen>
+    <dimen name="indicator_margin_bottom">79.0dip</dimen>
+    <dimen name="workspace_cell_height">102.0dip</dimen>
+    <dimen name="launcher_edit_top_height">40.0dip</dimen>
+    <dimen name="apps_customize_cell_width">78.0dip</dimen>
+    <dimen name="apps_customize_cell_height">92.0dip</dimen>
+    <dimen name="apps_list_pageLayoutPaddingTop">30.0dip</dimen>
+    <dimen name="apps_list_pageLayoutPaddingBottom">64.0dip</dimen>
+    <dimen name="apps_list_pageLayoutPaddingLeft">10.0dip</dimen>
+    <dimen name="apps_list_pageLayoutPaddingRight">10.0dip</dimen>
+    <dimen name="indicator_width">12.0dip</dimen>
+    <dimen name="indicator_gap">0.0dip</dimen>
+    <dimen name="edit_view_indicator_margintop">458.0dip</dimen>
+    <dimen name="quick_launcher_icon_size">70.0dip</dimen>
+    <dimen name="edit_view_indicator_marginbottom">150.0dip</dimen>
+    <dimen name="edit_view_applist_left_marginBottom">85.0dip</dimen>
+    <dimen name="cell_shortAxisStartPadding">12.0dip</dimen>
+    <dimen name="cell_shortAxisEndPadding">12.0dip</dimen>
+    <dimen name="allappindicator_margintop">570.0dip</dimen>
+    <dimen name="edit_view_dock_marginBottom">40.0dip</dimen>
+    <dimen name="edit_view_dock_bg_margintop">500.0dip</dimen>
+    <dimen name="edit_view_applist_left_margintop">530.0dip</dimen>
+    <dimen name="edit_view_widgetcellview_width">10.0dip</dimen>
+    <dimen name="edit_view_dock_height">100.0dip</dimen>
+    <dimen name="edit_view_applist_left_marginleft">342.0dip</dimen>
+    <dimen name="widget_camera_photodialog_width">324.0dip</dimen>
+</resources>

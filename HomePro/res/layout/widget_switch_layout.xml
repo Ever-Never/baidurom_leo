@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.widget.baidu.switchtool.SwitchWidgetBar android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/main_bar" android:background="@drawable/widget_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/switchHolder" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="4.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/settingLayout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:background="@drawable/line" android:layout_width="wrap_content" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:contentDescription="@string/image_des" />
+        <ImageButton android:id="@id/settingBtn" android:background="@drawable/appwidget_button_center" android:layout_width="0.0dip" android:layout_height="fill_parent" android:src="@drawable/advanceoptionbtn" android:layout_weight="1.0" android:contentDescription="@string/image_des" />
+    </LinearLayout>
+</com.baidu.launcher.ui.widget.baidu.switchtool.SwitchWidgetBar>

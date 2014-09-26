@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/theme_detail" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/detail_bg" android:scaleType="fitCenter" />
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:background="@drawable/bg_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_top" android:text="@string/author" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="left" android:id="@id/author" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dialog_top" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_top" android:text="@string/themeinfo_str_filesize" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="left" android:id="@id/themeinfo_id_filesize" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dialog_top" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_top" android:text="@string/version" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="left" android:id="@id/version" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dialog_top" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/view_download" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="right" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialog_top" android:text="@string/themeinfo_str_downloadtimes" android:layout_weight="1.0" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/dialog_content_size" android:textColor="@color/theme_dialog_detail_text_color_1" android:gravity="left" android:id="@id/themeinfo_id_downloadtimes" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginTop="@dimen/dialog_top" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

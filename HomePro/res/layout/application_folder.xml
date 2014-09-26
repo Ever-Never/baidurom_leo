@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.launcher.ui.common.ActionTextView android:textSize="12.0sp" android:textColor="#ffffffff" android:ellipsize="marquee" android:gravity="top|center" android:paddingLeft="2.0dip" android:paddingTop="5.0dip" android:paddingRight="2.0dip" android:paddingBottom="2.0dip" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/folder_app_height" android:singleLine="true" android:shadowColor="#a0000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="1.0" android:drawablePadding="3.0dip" launcher:action="status"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.home2" />

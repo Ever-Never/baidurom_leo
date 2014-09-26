@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/header" android:background="@drawable/status_bar_expanded_header_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Clock" android:id="@id/clock" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:singleLine="true" />
+    <com.android.systemui.statusbar.policy.DateView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Date" android:id="@id/date" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="0.0dip" />
+    <com.android.systemui.statusbar.RotationToggle android:id="@id/rotation_lock_button" android:clickable="true" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_margin="8.0dip" android:button="@drawable/ic_notify_rotation" android:contentDescription="@string/accessibility_rotation_lock_off" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/settings_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="55.0dip" android:src="@drawable/ic_notify_quicksettings" android:scaleType="center" android:contentDescription="@string/accessibility_settings_button" />
+            <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/newhand_tip_edit" android:background="@drawable/switch_tip_sort_bg" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:paddingRight="8.0dip" android:paddingBottom="10.0dip" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" />
+        </FrameLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="13.0dip" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/clear_all_button" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_notify_clear" android:contentDescription="@string/accessibility_clear_all" />
+            <ImageView android:enabled="true" android:layout_gravity="center_vertical" android:id="@id/switch_edit_btn" android:visibility="gone" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/ic_switch_edit" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

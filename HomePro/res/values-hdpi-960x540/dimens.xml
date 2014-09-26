@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="launcher_edit_top_height">44.0dip</dimen>
+    <dimen name="apps_list_pageLayoutPaddingBottom">70.0dip</dimen>
+    <dimen name="edit_view_indicator_margintop">465.0dip</dimen>
+    <dimen name="app_list_indicator_margin_bottom">25.0dip</dimen>
+    <dimen name="edit_view_applist_left_margintop">520.0dip</dimen>
+</resources>

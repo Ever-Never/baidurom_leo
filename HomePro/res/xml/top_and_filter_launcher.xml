@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<top_and_filter
+  xmlns:launcher="http://schemas.android.com/apk/res/com.baidu.launcher">
+    <app_filter className="com.baidu.input.ConfigActivity" packageName="com.baidu.input" />
+    <app_filter className="com.baidu.input.ImeMainConfigActivity" packageName="com.baidu.input" />
+</top_and_filter>

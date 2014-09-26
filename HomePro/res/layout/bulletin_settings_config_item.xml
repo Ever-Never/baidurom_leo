@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baidu.bulletin.ui.settings.ConfigItem android:background="@drawable/bulletin_settings_btn_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/configItemIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:textColor="#ff303030" android:id="@id/configItemTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_toRightOf="@id/configItemIcon" android:layout_centerVertical="true" />
+    <TextView android:textSize="16.0sp" android:id="@id/configItemState" android:paddingRight="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</com.baidu.bulletin.ui.settings.ConfigItem>
